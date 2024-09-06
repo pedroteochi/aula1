@@ -1,0 +1,22 @@
+package semana04;
+
+import javax.swing.JOptionPane;
+
+public class MetodosComRetorno {
+	
+	/**
+	 * Recebe dois valores e retorna sua soma
+	 * @param a - o primeiro valor
+	 * @param b - o segundo valor
+	 * @return - resultado da soma
+	 */
+
+	public static int somar(int a, int b) {
+		return a + b;
+	}
+	public static int somar() {
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor de n1: "));
+		int n2 = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor de n2: "));
+		return n1 + n2;
+	}
+}

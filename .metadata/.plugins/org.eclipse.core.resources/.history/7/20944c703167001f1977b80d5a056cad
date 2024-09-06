@@ -1,0 +1,12 @@
+package semana04;
+
+public class UsaCalculadora {
+
+	public static void main(String[] args) {
+		
+		Calculadora.somar(1, 2);
+		Calculadora.somar(1, 2, 3);
+
+	}
+
+}

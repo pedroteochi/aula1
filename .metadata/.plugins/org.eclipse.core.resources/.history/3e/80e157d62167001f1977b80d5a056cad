@@ -1,0 +1,11 @@
+package semana04;
+
+public class Impressora {
+	
+		public static void imprimir(){
+			
+				System.out.println("Apostila de POO");
+			
+		}
+
+}

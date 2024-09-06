@@ -1,0 +1,12 @@
+package semana04;
+
+public class UsaMetodos {
+
+	public static void main(String[] args) {
+		
+		MetodosComRetorno.somar(10, 20);
+		MetodosComRetorno.somar();
+
+	}
+
+}

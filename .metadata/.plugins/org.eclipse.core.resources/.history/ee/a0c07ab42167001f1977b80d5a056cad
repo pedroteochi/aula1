@@ -1,0 +1,9 @@
+package semana04;
+
+public class Impressora {
+	
+		public static void imprimir(){
+			
+		}
+
+}
