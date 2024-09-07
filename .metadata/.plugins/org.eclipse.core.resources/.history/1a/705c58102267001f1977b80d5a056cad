@@ -1,7 +1,0 @@
-package semana04;
-
-public class App {
-		public static void maian(String[] args) {
-			Impressora.imprimir();
-		}
-}

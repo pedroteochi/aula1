@@ -1,0 +1,13 @@
+package semana05;
+
+public class Windows {
+	
+	public static void main (String[] args) {
+		World01 w1 = new World(); 
+		World02 w2 = new World();
+		
+		w1.start();
+		w2.start();
+	}
+
+}

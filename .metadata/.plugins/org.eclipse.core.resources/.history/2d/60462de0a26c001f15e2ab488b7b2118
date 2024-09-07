@@ -1,0 +1,34 @@
+package semana05;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Tela extends JFrame{
+
+			private JButton bt;
+			private JTextField tf;
+		
+			public Tela(){
+				setTitle("My First Frame");
+				setBounds(0, 0, 500, 200);
+				setLayout(new FlowLayout());
+				bt = new JButton("Contar");
+				tf = new JTextField(10);
+				
+				add(bt);
+				add(tf);
+			}
+			
+				
+public static void main(String[] args) {
+	
+	Tela t = new Tela();
+	t.setVisible(true);
+			
+
+	}
+
+}
