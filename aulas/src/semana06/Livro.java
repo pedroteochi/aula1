@@ -9,6 +9,33 @@ public class Livro {
     private double preco;
     private boolean novo;
 
+    public Livro() {
+
+    }
+
+    public Livro(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Livro(int qtdePaginas, String titulo) {
+        this.qtdePaginas = qtdePaginas;
+        this.titulo = titulo;
+    }
+
+    public Livro(int qtdePaginas, String titulo, String autorPrincipal, String editora, double preco, boolean novo) {
+        this.qtdePaginas = qtdePaginas;
+        this.titulo = titulo;
+        this.autorPrincipal = autorPrincipal;
+        this.editora = editora;
+        setPreco(preco);
+        this.novo = novo;
+    }
+
+    public Livro(String titulo, int qtdePaginas) {
+        this.titulo = titulo;
+        this.qtdePaginas = qtdePaginas;
+    }
+
     public int getQtdePaginas() {
         return qtdePaginas;
     }
@@ -46,7 +73,12 @@ public class Livro {
     }
 
     public void setPreco(double preco) {
-        this.preco = preco;
+        if (preco > 0) {
+            this.preco = preco;
+        } else {
+            System.out.println("Preco inválido");
+        }
+
     }
 
     public boolean isNovo() {
